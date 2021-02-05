@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests">
+  <test name="perfectoWebChrome" enabled="false">
+       <parameter name="type" value="perfectoWebChrome" />
+        <classes>
+            <class name="HealeniumWeb">
+                <methods>
+                    <include name="perfectoTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+  
+   <test name="perfectoMobileChrome" enabled="true">
+        <parameter name="type" value="perfectoMobileChrome" />
+        <classes>
+            <class name="HealeniumWeb">
+                <methods>
+                    <include name="perfectoTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+  
+   <test name="localWebChrome" enabled="false">
+        <parameter name="type" value="localWebChrome" />
+        <classes>
+            <class name="HealeniumWeb">
+                <methods>
+                    <include name="localChromeTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>

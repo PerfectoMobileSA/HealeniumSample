@@ -1,0 +1,3 @@
+#locator repository for sample page
+markup.btn = {\"locator\":\"id=markup-generation-button\"}
+test.btn = {\"locator\":\"xpath=//button[contains(@class,'default-btn')]\"}

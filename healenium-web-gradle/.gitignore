@@ -1,0 +1,14 @@
+.gradle
+.idea
+/out
+/build/
+gradle-app.setting
+.github/
+.gradletasknamecache
+!gradle-wrapper.jar
+chromedriver*
+.classpath
+.project
+.settings/
+bin
+.DS_Store
