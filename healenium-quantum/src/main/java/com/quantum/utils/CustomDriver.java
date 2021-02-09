@@ -2,7 +2,13 @@ package com.quantum.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.epam.healenium.SelfHealingDriver;
 import com.qmetry.qaf.automation.core.ConfigurationManager;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
@@ -20,6 +26,18 @@ public class CustomDriver {
 		} else {
 			return DeviceUtils.getQAFDriver().getUnderLayingDriver();
 		}
+	}
+	
+	/**
+	 *  waits for visibility of the element and returns it
+	 * @param by
+	 * @param timeout
+	 * @return
+	 */
+	public static WebElement waitForVisible(By by, int timeout) {
+		WebElement element =  new WebDriverWait(CustomDriver.getHealeniumDriver(), timeout).until(ExpectedConditions.visibilityOf(
+				CustomDriver.getHealeniumDriver().findElement(by)));
+		return element;
 	}
 
 	/**

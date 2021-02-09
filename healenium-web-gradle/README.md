@@ -10,6 +10,7 @@ This sample runs against the url: https://sha-test-app.herokuapp.com/ with rando
 * Install [gradle](https://gradle.org/install/) 6.3 or above and make sure that gradle is accessible from command prompt/ terminal.
 * [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * An IDE to write your tests on - [Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr) or [IntelliJ](https://www.jetbrains.com/idea/download/#)
+
 Note: Import  this gradle project with gradle wrapper as gradle distribution.
 
 ## How to start
@@ -30,7 +31,7 @@ Verify that images healenium/hlm-backend:latest and  postgres:11-alpine are up a
      cd ..
 * Run the following gradle commands:
 
-    ./gradlew clean test -PcloudName={cloudName} -PsecurityToken={securityToken} 
+    ./gradlew clean build test -PcloudName={cloudName} -PsecurityToken={securityToken} 
 
 Note:
 

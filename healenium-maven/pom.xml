@@ -22,16 +22,8 @@
 			<url>https://repo1.perfectomobile.com/public/repositories/maven</url>
 		</repository>
 		<repository>
-			<id>central</id>
-			<name>Repo1</name>
-			<url>http://repo1.maven.org/maven2</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
+			<id>jai</id>
+			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
 		</repository>
 		<repository>
 			<snapshots>
@@ -42,21 +34,6 @@
 			<url>https://dl.bintray.com/epam/healenium</url>
 		</repository>
 	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>central</id>
-			<name>Repo1</name>
-			<url>http://repo1.maven.org/maven2</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
 
 	<dependencies>
 		<dependency>
@@ -101,11 +78,6 @@
 			<groupId>com.perfectomobile</groupId>
 			<artifactId>http-client</artifactId>
 			<version>RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>dom4j</groupId>
-			<artifactId>dom4j</artifactId>
-			<version>1.6.1</version>
 		</dependency>
 		<dependency>
 			<groupId>jaxen</groupId>
@@ -155,7 +127,7 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>23.0</version>
+			<version>24.1.1-jre</version>
 		</dependency>
 	</dependencies>
 

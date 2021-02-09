@@ -2,6 +2,8 @@ package com.quantum.pages;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qmetry.qaf.automation.ui.WebDriverBaseTestPage;
 import com.qmetry.qaf.automation.ui.annotations.FindBy;
@@ -29,8 +31,12 @@ public class SamplePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 		return this;
 	}
 
-	public void clickTestButton() {
+	public QAFExtendedWebElement getTestButton() {
 		QAFExtendedWebElement testButton = new QAFExtendedWebElement("test.btn");
-		CustomDriver.getHealeniumDriver().findElement(By.xpath(CustomDriver.getLocator(testButton))).click();
+		return testButton;
+	}
+
+	public void clickTestButton() {
+		CustomDriver.waitForVisible(By.xpath(CustomDriver.getLocator(getTestButton())), 15).click();
 	}
 }
