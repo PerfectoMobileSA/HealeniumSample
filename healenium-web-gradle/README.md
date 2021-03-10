@@ -1,4 +1,4 @@
-# Healenium Web + Selenide + Perfecto Integration
+# Healenium Web +  Perfecto Integration
 
 This is a sample Java based [Healenium](https://healenium.io) web integration with Perfecto Smart Reporting integration.
 
