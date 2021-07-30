@@ -35,3 +35,4 @@ perfectoReports/
 *.pdf
 /bin
 maven.iml
+example_appium_mvn/
